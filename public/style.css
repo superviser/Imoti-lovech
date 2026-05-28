@@ -247,14 +247,28 @@ a:hover { text-decoration: underline; }
     visibility: hidden;
     transition: transform .25s ease, visibility .25s ease;
     box-shadow: -8px 0 24px rgba(0,0,0,.18);
-    padding-top: max(16px, env(safe-area-inset-top));
-    padding-bottom: max(16px, env(safe-area-inset-bottom));
-    padding-right: max(16px, env(safe-area-inset-right));
+    /* Flex колона: заглавието стои горе, тялото скролва. overflow:hidden на
+       самия aside — реалният скрол е в .filters-body. min-height:0 е ключът,
+       за да може flex-детето да се свие и наистина да скролва (иначе бъг). */
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    overflow: hidden;
+  }
+  .filters.open { transform: translateX(0); visibility: visible; }
+  .filters .filters-header {
+    flex: 0 0 auto;
+    margin: 0;
+    padding: max(16px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) 12px 16px;
+  }
+  .filters-body {
+    flex: 1 1 auto;
+    min-height: 0;
     overflow-y: auto;
     overscroll-behavior: contain;
     -webkit-overflow-scrolling: touch;
+    padding: 0 max(16px, env(safe-area-inset-right)) max(16px, env(safe-area-inset-bottom)) 16px;
   }
-  .filters.open { transform: translateX(0); visibility: visible; }
   .filter-close { display: inline-block; }
   .filters .filters-header strong { font-size: 1.05rem; }
 }
