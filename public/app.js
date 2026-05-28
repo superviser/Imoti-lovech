@@ -69,20 +69,38 @@ function isNew(listing) {
   return listing.first_seen && listing.first_seen > STATE.installed_at;
 }
 
+// Предикат с опция да игнорира даден фасет (за faceted броеве).
+// ignore: "types" | "regions" | null
+function passesFilters(r, ignore) {
+  if (!r.still_active) return false;
+  if (FILTERS.onlyNew && !isNew(r)) return false;
+  if (ignore !== "types" && FILTERS.types.size && !FILTERS.types.has(r.type)) return false;
+  if (ignore !== "regions" && FILTERS.regions.size && !FILTERS.regions.has(r.region)) return false;
+  if (FILTERS.priceMin != null && (r.price_eur == null || r.price_eur < FILTERS.priceMin)) return false;
+  if (FILTERS.priceMax != null && (r.price_eur == null || r.price_eur > FILTERS.priceMax)) return false;
+  if (FILTERS.areaMin != null && (r.area_m2 == null || r.area_m2 < FILTERS.areaMin)) return false;
+  if (FILTERS.areaMax != null && (r.area_m2 == null || r.area_m2 > FILTERS.areaMax)) return false;
+  if (FILTERS.ppmMin != null && (r.price_per_m2_eur == null || r.price_per_m2_eur < FILTERS.ppmMin)) return false;
+  if (FILTERS.ppmMax != null && (r.price_per_m2_eur == null || r.price_per_m2_eur > FILTERS.ppmMax)) return false;
+  return true;
+}
+
 function applyFilters(listings) {
-  return listings.filter((r) => {
-    if (!r.still_active) return false;
-    if (FILTERS.onlyNew && !isNew(r)) return false;
-    if (FILTERS.types.size && !FILTERS.types.has(r.type)) return false;
-    if (FILTERS.regions.size && !FILTERS.regions.has(r.region)) return false;
-    if (FILTERS.priceMin != null && (r.price_eur == null || r.price_eur < FILTERS.priceMin)) return false;
-    if (FILTERS.priceMax != null && (r.price_eur == null || r.price_eur > FILTERS.priceMax)) return false;
-    if (FILTERS.areaMin != null && (r.area_m2 == null || r.area_m2 < FILTERS.areaMin)) return false;
-    if (FILTERS.areaMax != null && (r.area_m2 == null || r.area_m2 > FILTERS.areaMax)) return false;
-    if (FILTERS.ppmMin != null && (r.price_per_m2_eur == null || r.price_per_m2_eur < FILTERS.ppmMin)) return false;
-    if (FILTERS.ppmMax != null && (r.price_per_m2_eur == null || r.price_per_m2_eur > FILTERS.ppmMax)) return false;
-    return true;
-  });
+  return listings.filter((r) => passesFilters(r, null));
+}
+
+// Брои наличните имоти по тип/район, съобразено с другите активни филтри
+function facetCount(key) {
+  // key: "type" -> игнорира type филтъра; "region" -> игнорира region филтъра
+  const ignore = key === "type" ? "types" : "regions";
+  const counts = new Map();
+  for (const r of DATA.listings) {
+    if (!passesFilters(r, ignore)) continue;
+    const v = r[key];
+    if (v == null) continue;
+    counts.set(v, (counts.get(v) || 0) + 1);
+  }
+  return counts;
 }
 
 function sortListings(listings) {
@@ -165,6 +183,7 @@ function render() {
   $("#count-pill").textContent = `${filtered.length} обяви`;
   updateNewPill();
   updateFilterCountBadge();
+  updateFacetCounts();
 }
 
 function updateNewPill() {
@@ -179,14 +198,22 @@ function updateNewPill() {
 }
 
 // ----- Filter UI -----
-function buildChips(containerId, items, filterSet) {
+// Регистър на чиповете по фасет, за да обновяваме броевете на място
+const CHIP_REGISTRY = { type: [], region: [] };
+
+function buildChips(containerId, items, filterSet, facetKey) {
   const c = document.getElementById(containerId);
   c.innerHTML = "";
-  for (const [name, count] of items) {
+  CHIP_REGISTRY[facetKey] = [];
+  for (const [name] of items) {
     const btn = document.createElement("button");
     btn.className = "chip";
     btn.type = "button";
-    btn.innerHTML = `${escape(name)}<span class="count">${count}</span>`;
+    const label = document.createElement("span");
+    label.textContent = name;
+    const countSpan = document.createElement("span");
+    countSpan.className = "count";
+    btn.append(label, countSpan);
     btn.addEventListener("click", () => {
       if (filterSet.has(name)) filterSet.delete(name);
       else filterSet.add(name);
@@ -194,6 +221,20 @@ function buildChips(containerId, items, filterSet) {
       render();
     });
     c.appendChild(btn);
+    CHIP_REGISTRY[facetKey].push({ name, btn, countSpan });
+  }
+}
+
+// Обновява броевете и затъмнява недостъпните опции спрямо другите филтри
+function updateFacetCounts() {
+  for (const [facetKey, dataKey] of [["type", "type"], ["region", "region"]]) {
+    const counts = facetCount(dataKey);
+    for (const { name, btn, countSpan } of CHIP_REGISTRY[facetKey]) {
+      const n = counts.get(name) || 0;
+      countSpan.textContent = n;
+      // Затъмни опции с 0 налични (освен ако са избрани в момента)
+      btn.classList.toggle("chip-empty", n === 0 && !btn.classList.contains("active"));
+    }
   }
 }
 
@@ -221,8 +262,8 @@ function buildFilters() {
   }
   const types = [...typeCounts.entries()].sort((a, b) => b[1] - a[1]);
   const regions = [...regionCounts.entries()].sort((a, b) => b[1] - a[1]);
-  buildChips("filter-types", types, FILTERS.types);
-  buildChips("filter-regions", regions, FILTERS.regions);
+  buildChips("filter-types", types, FILTERS.types, "type");
+  buildChips("filter-regions", regions, FILTERS.regions, "region");
 
   setupNumberFilter("price-min", "priceMin");
   setupNumberFilter("price-max", "priceMax");

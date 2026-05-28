@@ -275,6 +275,12 @@ a:hover { text-decoration: underline; }
   border-color: var(--accent);
 }
 .chip .count { opacity: .7; margin-left: 4px; }
+/* опции без налични имоти спрямо другите филтри */
+.chip-empty {
+  opacity: .35;
+  text-decoration: line-through;
+}
+.chip-empty:hover { border-color: var(--border); }
 .range { display: flex; gap: 6px; align-items: center; }
 .range input {
   width: 100%;
