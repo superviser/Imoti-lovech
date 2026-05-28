@@ -318,22 +318,27 @@ function setupDrawer() {
   const backdrop = $("#filter-backdrop");
   const toggle = $("#filter-toggle");
 
-  // iOS-съвместимо заключване на фона, без да чупим скрола на панела:
-  // 1) панелът скролва нативно — НИКОГА не отказваме touchmove вътре в него
-  //    (един preventDefault на iOS убива целия скрол жест);
-  // 2) при докосване държим скрола на 1px от горния/долния край, така че
-  //    overscroll-ът да не "изтича" към фона дори без overscroll-behavior
-  //    (липсва на iOS<16);
-  // 3) жест извън панела изобщо не скролва.
-  const onTouchStart = (e) => {
-    if (e.touches.length !== 1 || !filters.contains(e.target)) return;
-    const max = filters.scrollHeight - filters.clientHeight;
-    if (max <= 0) return;
-    if (filters.scrollTop <= 0) filters.scrollTop = 1;
-    else if (filters.scrollTop >= max) filters.scrollTop = max - 1;
+  // Заключваме скрола на ЦЯЛАТА страница, докато drawer-ът е отворен, така че
+  // панелът (position:fixed, overflow:auto) да е единственото скролваемо нещо.
+  // На iOS overflow:hidden върху body НЕ заключва скрола — затова фиксираме body
+  // на текущата позиция (position:fixed). Така фонът не скролва, а overscroll-ът
+  // на панела няма накъде да "изтече" (важи и за iOS<16, без overscroll-behavior).
+  let savedScrollY = 0;
+  const lockPage = () => {
+    savedScrollY = window.scrollY;
+    document.body.style.position = "fixed";
+    document.body.style.top = `-${savedScrollY}px`;
+    document.body.style.left = "0";
+    document.body.style.right = "0";
+    document.body.style.width = "100%";
   };
-  const onTouchMove = (e) => {
-    if (!filters.contains(e.target)) e.preventDefault();
+  const unlockPage = () => {
+    document.body.style.position = "";
+    document.body.style.top = "";
+    document.body.style.left = "";
+    document.body.style.right = "";
+    document.body.style.width = "";
+    window.scrollTo(0, savedScrollY);
   };
 
   const open = () => {
@@ -341,16 +346,14 @@ function setupDrawer() {
     backdrop.hidden = false;
     requestAnimationFrame(() => backdrop.classList.add("show"));
     toggle.setAttribute("aria-expanded", "true");
-    document.addEventListener("touchstart", onTouchStart, { passive: true });
-    document.addEventListener("touchmove", onTouchMove, { passive: false });
+    lockPage();
   };
   const close = () => {
     filters.classList.remove("open");
     backdrop.classList.remove("show");
     setTimeout(() => { backdrop.hidden = true; }, 220);
     toggle.setAttribute("aria-expanded", "false");
-    document.removeEventListener("touchstart", onTouchStart);
-    document.removeEventListener("touchmove", onTouchMove);
+    unlockPage();
   };
 
   toggle.addEventListener("click", () => {
