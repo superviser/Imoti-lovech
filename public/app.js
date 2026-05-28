@@ -318,12 +318,24 @@ function setupDrawer() {
   const backdrop = $("#filter-backdrop");
   const toggle = $("#filter-toggle");
 
-  // Блокира скрола на фона, но оставя скрола ВЪТРЕ в панела свободен.
-  // (body overflow:hidden не работи на iOS, а body position:fixed чупи
-  //  вътрешния скрол на fixed панела — затова отказваме touchmove само
-  //  когато жестът е извън #filters.)
-  const blockBgScroll = (e) => {
-    if (!filters.contains(e.target)) e.preventDefault();
+  // iOS-съвместимо заключване на фона (алгоритъмът на body-scroll-lock):
+  // позволяваме скрол ВЪТРЕ в панела, но ръчно спираме "изтичането" към
+  // фона в краищата. Не разчитаме на overscroll-behavior (липсва на iOS<16)
+  // нито на body position:fixed (чупи вътрешния скрол на iOS).
+  let startY = 0;
+  const onTouchStart = (e) => {
+    if (e.touches.length === 1) startY = e.touches[0].clientY;
+  };
+  const onTouchMove = (e) => {
+    if (e.touches.length !== 1) return;
+    // жест извън панела → изобщо не скролваме
+    if (!filters.contains(e.target)) { e.preventDefault(); return; }
+    const dy = e.touches[0].clientY - startY;      // >0 = пръстът надолу
+    const atTop = filters.scrollTop <= 0;
+    const atBottom =
+      filters.scrollTop + filters.clientHeight >= filters.scrollHeight - 1;
+    // в горния/долния край спираме, за да не поеме скрола фонът
+    if ((atTop && dy > 0) || (atBottom && dy < 0)) e.preventDefault();
   };
 
   const open = () => {
@@ -331,14 +343,16 @@ function setupDrawer() {
     backdrop.hidden = false;
     requestAnimationFrame(() => backdrop.classList.add("show"));
     toggle.setAttribute("aria-expanded", "true");
-    document.addEventListener("touchmove", blockBgScroll, { passive: false });
+    document.addEventListener("touchstart", onTouchStart, { passive: true });
+    document.addEventListener("touchmove", onTouchMove, { passive: false });
   };
   const close = () => {
     filters.classList.remove("open");
     backdrop.classList.remove("show");
     setTimeout(() => { backdrop.hidden = true; }, 220);
     toggle.setAttribute("aria-expanded", "false");
-    document.removeEventListener("touchmove", blockBgScroll, { passive: false });
+    document.removeEventListener("touchstart", onTouchStart);
+    document.removeEventListener("touchmove", onTouchMove);
   };
 
   toggle.addEventListener("click", () => {
