@@ -1,7 +1,9 @@
 // Имоти Ловеч — клиентска логика: филтри + NEW badge + localStorage state
+// Конфигурация per-страница от <body data-data="..." data-storage="...">
 
 const EUR_TO_BGN = 1.95583;
-const STORAGE_KEY = "imot-lovech-state-v1";
+const DATA_FILE = document.body.dataset.data || "data.json";
+const STORAGE_KEY = document.body.dataset.storage || "imot-lovech-state-v1";
 const APARTMENT_TYPES = new Set([
   "Едностаен", "Двустаен", "Тристаен", "Четиристаен",
   "Многостаен", "Мезонет", "Ателие", "Гарсониера", "Стая",
@@ -358,7 +360,7 @@ function updateFilterCountBadge() {
 // ----- Bootstrap -----
 async function init() {
   try {
-    const res = await fetch("data.json?t=" + Date.now());
+    const res = await fetch(DATA_FILE + "?t=" + Date.now());
     DATA = await res.json();
   } catch (e) {
     $("#grid").innerHTML = `<div class="empty">Не мога да заредя data.json: ${escape(e.message)}</div>`;

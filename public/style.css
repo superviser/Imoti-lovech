@@ -79,6 +79,25 @@ a:hover { text-decoration: underline; }
   align-items: center;
   gap: 12px;
 }
+.brand {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
+}
+.brand:hover { text-decoration: none; }
+.brand:hover .brand-switch { background: var(--accent); color: #fff; border-color: var(--accent); }
+.brand-switch {
+  font-size: .72rem;
+  font-weight: 600;
+  color: var(--accent);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 2px 8px;
+  white-space: nowrap;
+  transition: .15s;
+}
 .topbar h1 {
   font-size: 1.2rem;
   margin: 0;
@@ -398,6 +417,13 @@ select {
   background: var(--card);
   border: 1px dashed var(--border);
   border-radius: var(--radius);
+}
+.more-note {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 16px;
+  color: var(--text-muted);
+  font-size: .85rem;
 }
 
 .footer {

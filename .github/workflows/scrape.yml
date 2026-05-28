@@ -27,14 +27,17 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run scraper
-        run: python scraper.py --output public/data.json --no-csv
+      - name: Run scraper (град Ловеч)
+        run: python scraper.py --scope grad-lovech --no-csv
+
+      - name: Run scraper (област Ловеч)
+        run: python scraper.py --scope oblast-lovech --no-csv
 
       - name: Commit if changed
         run: |
           git config user.name "imot-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/data.json
+          git add public/data.json public/data-oblast.json
           if git diff --staged --quiet; then
             echo "No changes."
           else

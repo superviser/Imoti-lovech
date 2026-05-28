@@ -21,11 +21,15 @@ if sys.platform == "win32":
     sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", errors="replace")
 
 BASE = "https://www.imot.bg"
-LISTING_URL = f"{BASE}/obiavi/prodazhbi/grad-lovech"
 WORKERS = 25
 TIMEOUT = 20
 MAX_PAGES = 60  # таван за пагинацията (защита срещу безкраен цикъл)
 EUR_TO_BGN = 1.95583
+
+# Задават се от CLI в main() според --scope
+LISTING_URL = f"{BASE}/obiavi/prodazhbi/grad-lovech"
+REGION_MODE = "grad"   # 'grad' (район в града) | 'oblast' (населено място)
+CITY_LABEL = "Ловеч"
 
 OUT_DIR = Path(__file__).parent
 CSV_PATH = OUT_DIR / "listings_lovech.csv"
@@ -290,15 +294,53 @@ def parse_construction(text):
     return None
 
 
-def parse_type_and_region(url):
-    """Извлича тип имот и район от URL slug. Връща (type, region)."""
-    m = re.search(r"prodava-(.+?)-grad-lovech-(.+?)$", url)
+# Известните type-slug-ове, подредени по дължина (за prefix match: напр.
+# "etazh-ot-kashta" преди "kashta", "atelie-tavan" преди "atelie")
+TYPE_SLUGS_BY_LEN = sorted(TYPE_SLUG_MAP, key=len, reverse=True)
+
+
+def _region_grad(loc_slug):
+    """Район в град Ловеч от остатъка на slug-а (напр. 'grad-lovech-mladost')."""
+    m = re.match(r"grad-lovech-?(.*)$", loc_slug)
+    slug = (m.group(1) if m else "").strip("-")
+    if not slug:
+        return "Ловеч"
+    return REGION_SLUG_MAP.get(slug) or slug.replace("-", " ").title()
+
+
+def _region_from_title(title):
+    """Населено място от заглавието на областна обява.
+    'Продава КЪЩА, град Троян - ...' -> 'гр. Троян'
+    'Продава КЪЩА, село Владиня - ...' -> 'с. Владиня'
+    """
+    m = re.search(r"\b(град|село|гр\.|с\.)\s+([А-Яа-яЁё][А-Яа-яЁё\s]*?)\s*(?:,|\s[-–]\s|$)", title)
     if not m:
-        return None, None
-    type_slug = m.group(1)
-    region_slug = m.group(2)
-    ptype = TYPE_SLUG_MAP.get(type_slug)
-    region = REGION_SLUG_MAP.get(region_slug) or region_slug.replace("-", " ").title()
+        return None
+    kind = "гр." if m.group(1) in ("град", "гр.") else "с."
+    name = re.sub(r"\s+", " ", m.group(2)).strip()
+    return f"{kind} {name}" if name else None
+
+
+def parse_type_and_region(url, title, mode):
+    """Извлича (тип, район/населено място). mode: 'grad' | 'oblast'.
+
+    Типът се определя по най-дългия съвпадащ известен slug → работи и за
+    град, и за област. Районът: за град от URL-а, за област от заглавието.
+    """
+    ptype = None
+    rest = ""
+    m = re.search(r"-prodava-(.+)$", url)
+    if m:
+        rest = m.group(1)
+        for slug in TYPE_SLUGS_BY_LEN:
+            if rest == slug or rest.startswith(slug + "-"):
+                ptype = TYPE_SLUG_MAP[slug]
+                rest = rest[len(slug):].lstrip("-")
+                break
+    if mode == "oblast":
+        region = _region_from_title(title)
+    else:
+        region = _region_grad(rest)
     return ptype, region
 
 
@@ -324,7 +366,7 @@ def parse_ad(session, url):
     floor, total_floor = parse_floor(full_text)
     year_from, year_to = parse_year(full_text)
     construction = parse_construction(full_text)
-    ptype, region = parse_type_and_region(url)
+    ptype, region = parse_type_and_region(url, title, REGION_MODE)
 
     ppm_eur = (eur / area) if eur and area else None
 
@@ -643,7 +685,7 @@ def write_json(merged, report, json_path, now_iso):
     active = [r for r in merged if r.get("still_active")]
     payload = {
         "generated_at": now_iso,
-        "city": "Ловеч",
+        "city": CITY_LABEL,
         "source": LISTING_URL,
         "eur_to_bgn": EUR_TO_BGN,
         "stats": build_top_stats(active, report),
@@ -654,14 +696,31 @@ def write_json(merged, report, json_path, now_iso):
 
 
 def main():
+    global LISTING_URL, REGION_MODE, CITY_LABEL
     parser = argparse.ArgumentParser(description="imot.bg Ловеч scraper")
-    parser.add_argument("--output", type=Path, default=DEFAULT_JSON_PATH,
-                        help="Път за изходния data.json (default: public/data.json)")
+    parser.add_argument("--scope", default="grad-lovech",
+                        choices=["grad-lovech", "oblast-lovech"],
+                        help="Обхват: град Ловеч или цялата област")
+    parser.add_argument("--output", type=Path, default=None,
+                        help="Път за изходния JSON (по подразбиране според --scope)")
     parser.add_argument("--no-csv", action="store_true",
                         help="Не пиши CSV/report.md (само JSON)")
     args = parser.parse_args()
 
-    print(f"== imot.bg Ловеч scraper ({WORKERS} workera) ==\n")
+    # Конфигурация според обхвата
+    LISTING_URL = f"{BASE}/obiavi/prodazhbi/{args.scope}"
+    if args.scope == "oblast-lovech":
+        REGION_MODE = "oblast"
+        CITY_LABEL = "Област Ловеч"
+        default_out = OUT_DIR / "public" / "data-oblast.json"
+    else:
+        REGION_MODE = "grad"
+        CITY_LABEL = "Ловеч"
+        default_out = DEFAULT_JSON_PATH
+    if args.output is None:
+        args.output = default_out
+
+    print(f"== imot.bg scraper [{args.scope}] ({WORKERS} workera) ==\n")
     session = get_session()
 
     print("[1/3] Събиране на URL-и от пагинацията...")
