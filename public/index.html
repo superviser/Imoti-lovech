@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Имоти Ловеч — Продажби</title>
+<meta name="description" content="Всички обяви за продажби в град Ловеч от imot.bg, обновявани на всеки 30 минути.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <h1>Имоти <span class="city">Ловеч</span></h1>
+    <div class="meta">
+      <span id="count-pill" class="pill">— обяви</span>
+      <span id="new-pill" class="pill pill-new" hidden>0 нови</span>
+      <span id="updated" class="updated"></span>
+    </div>
+    <div class="actions">
+      <button id="toggle-only-new" class="btn-ghost">Само нови</button>
+      <button id="mark-all-seen" class="btn-ghost">Маркирай всички като прочетени</button>
+    </div>
+  </div>
+</header>
+
+<main class="layout">
+  <aside class="filters" id="filters">
+    <div class="filters-header">
+      <strong>Филтри</strong>
+      <button id="clear-filters" class="btn-link">Изчисти</button>
+    </div>
+
+    <fieldset>
+      <legend>Тип имот</legend>
+      <div id="filter-types" class="chips"></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Район</legend>
+      <div id="filter-regions" class="chips"></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Цена (EUR)</legend>
+      <div class="range">
+        <input type="number" id="price-min" placeholder="мин" inputmode="numeric">
+        <span>–</span>
+        <input type="number" id="price-max" placeholder="макс" inputmode="numeric">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Площ (m²)</legend>
+      <div class="range">
+        <input type="number" id="area-min" placeholder="мин" inputmode="numeric">
+        <span>–</span>
+        <input type="number" id="area-max" placeholder="макс" inputmode="numeric">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Цена / m² (EUR)</legend>
+      <div class="range">
+        <input type="number" id="ppm-min" placeholder="мин" inputmode="numeric">
+        <span>–</span>
+        <input type="number" id="ppm-max" placeholder="макс" inputmode="numeric">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Сортирай по</legend>
+      <select id="sort">
+        <option value="new">Най-нови</option>
+        <option value="price_asc">Цена ↑</option>
+        <option value="price_desc">Цена ↓</option>
+        <option value="area_desc">Най-голяма площ</option>
+        <option value="ppm_asc">€/m² ↑</option>
+        <option value="ppm_desc">€/m² ↓</option>
+      </select>
+    </fieldset>
+  </aside>
+
+  <section class="results">
+    <div id="grid" class="grid"></div>
+    <div id="empty" class="empty" hidden>Няма обяви с тези филтри.</div>
+  </section>
+</main>
+
+<footer class="footer">
+  <small>Данни от <a href="https://www.imot.bg/obiavi/prodazhbi/grad-lovech" target="_blank" rel="noopener">imot.bg</a> · обновявани на всеки 30 мин · 1 EUR = 1.95583 лв</small>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

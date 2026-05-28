@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.pyo
+
+# Локални output файлове (CSV/MD/log) — JSON-ът в public/ е trackнат
+listings_lovech.csv
+report.md
+failed.log
+debug_*.html
+
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
