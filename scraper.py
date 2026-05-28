@@ -24,6 +24,7 @@ BASE = "https://www.imot.bg"
 LISTING_URL = f"{BASE}/obiavi/prodazhbi/grad-lovech"
 WORKERS = 25
 TIMEOUT = 20
+MAX_PAGES = 60  # таван за пагинацията (защита срещу безкраен цикъл)
 EUR_TO_BGN = 1.95583
 
 OUT_DIR = Path(__file__).parent
@@ -122,16 +123,22 @@ def fetch(session, url, retries=3):
 
 
 def collect_ad_urls(session):
-    """Преглед на 8 страници, събира уникални URL-и за обяви."""
+    """Динамично минава през всички страници на пагинацията.
+
+    Спира когато: страница върне 0 нови обяви (подминали сме последната),
+    fetch фейлне, или достигнем MAX_PAGES (защита срещу безкраен цикъл).
+    Така работи независимо дали обявите са на 8, 9, 10+ страници.
+    """
     urls = []
     seen = set()
     pattern = re.compile(r"/obiava-([a-z0-9-]+?)(?=[\"'#?\s<])")
-    for page in range(1, 9):
+    page = 1
+    while page <= MAX_PAGES:
         url = LISTING_URL if page == 1 else f"{LISTING_URL}/p-{page}"
         html = fetch(session, url)
         if not html:
-            print(f"[!] Failed to fetch page {page}")
-            continue
+            print(f"  page {page}: няма съдържание (край на пагинацията)")
+            break
         found = 0
         for m in pattern.finditer(html):
             ad_id = m.group(1)
@@ -144,7 +151,13 @@ def collect_ad_urls(session):
             urls.append(f"{BASE}/obiava-{ad_id}")
             found += 1
         print(f"  page {page}: +{found} нови (общо {len(urls)})")
+        # 0 нови обяви → подминали сме последната страница (или дубликати)
+        if found == 0:
+            break
+        page += 1
         time.sleep(0.5)
+    if page > MAX_PAGES:
+        print(f"  [!] достигнат лимит MAX_PAGES={MAX_PAGES}")
     return urls
 
 
