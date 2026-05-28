@@ -318,24 +318,22 @@ function setupDrawer() {
   const backdrop = $("#filter-backdrop");
   const toggle = $("#filter-toggle");
 
-  // iOS-съвместимо заключване на фона (алгоритъмът на body-scroll-lock):
-  // позволяваме скрол ВЪТРЕ в панела, но ръчно спираме "изтичането" към
-  // фона в краищата. Не разчитаме на overscroll-behavior (липсва на iOS<16)
-  // нито на body position:fixed (чупи вътрешния скрол на iOS).
-  let startY = 0;
+  // iOS-съвместимо заключване на фона, без да чупим скрола на панела:
+  // 1) панелът скролва нативно — НИКОГА не отказваме touchmove вътре в него
+  //    (един preventDefault на iOS убива целия скрол жест);
+  // 2) при докосване държим скрола на 1px от горния/долния край, така че
+  //    overscroll-ът да не "изтича" към фона дори без overscroll-behavior
+  //    (липсва на iOS<16);
+  // 3) жест извън панела изобщо не скролва.
   const onTouchStart = (e) => {
-    if (e.touches.length === 1) startY = e.touches[0].clientY;
+    if (e.touches.length !== 1 || !filters.contains(e.target)) return;
+    const max = filters.scrollHeight - filters.clientHeight;
+    if (max <= 0) return;
+    if (filters.scrollTop <= 0) filters.scrollTop = 1;
+    else if (filters.scrollTop >= max) filters.scrollTop = max - 1;
   };
   const onTouchMove = (e) => {
-    if (e.touches.length !== 1) return;
-    // жест извън панела → изобщо не скролваме
-    if (!filters.contains(e.target)) { e.preventDefault(); return; }
-    const dy = e.touches[0].clientY - startY;      // >0 = пръстът надолу
-    const atTop = filters.scrollTop <= 0;
-    const atBottom =
-      filters.scrollTop + filters.clientHeight >= filters.scrollHeight - 1;
-    // в горния/долния край спираме, за да не поеме скрола фонът
-    if ((atTop && dy > 0) || (atBottom && dy < 0)) e.preventDefault();
+    if (!filters.contains(e.target)) e.preventDefault();
   };
 
   const open = () => {
