@@ -164,6 +164,7 @@ function render() {
   $("#empty").hidden = filtered.length > 0;
   $("#count-pill").textContent = `${filtered.length} обяви`;
   updateNewPill();
+  updateFilterCountBadge();
 }
 
 function updateNewPill() {
@@ -230,7 +231,15 @@ function buildFilters() {
   setupNumberFilter("ppm-min", "ppmMin");
   setupNumberFilter("ppm-max", "ppmMax");
 
-  $("#sort").addEventListener("change", (e) => { FILTERS.sort = e.target.value; render(); });
+  // Sort: синхронизирани desktop (#sort) и mobile (#sort-mobile)
+  const onSort = (v) => {
+    FILTERS.sort = v;
+    $("#sort").value = v;
+    $("#sort-mobile").value = v;
+    render();
+  };
+  $("#sort").addEventListener("change", (e) => onSort(e.target.value));
+  $("#sort-mobile").addEventListener("change", (e) => onSort(e.target.value));
 
   $("#clear-filters").addEventListener("click", () => {
     FILTERS.types.clear();
@@ -256,6 +265,53 @@ function buildFilters() {
     saveState();
     render();
   });
+
+  setupDrawer();
+}
+
+// ----- Mobile drawer -----
+function setupDrawer() {
+  const filters = $("#filters");
+  const backdrop = $("#filter-backdrop");
+  const toggle = $("#filter-toggle");
+
+  const open = () => {
+    filters.classList.add("open");
+    backdrop.hidden = false;
+    requestAnimationFrame(() => backdrop.classList.add("show"));
+    toggle.setAttribute("aria-expanded", "true");
+    document.body.style.overflow = "hidden";
+  };
+  const close = () => {
+    filters.classList.remove("open");
+    backdrop.classList.remove("show");
+    setTimeout(() => { backdrop.hidden = true; }, 220);
+    toggle.setAttribute("aria-expanded", "false");
+    document.body.style.overflow = "";
+  };
+
+  toggle.addEventListener("click", () => {
+    filters.classList.contains("open") ? close() : open();
+  });
+  backdrop.addEventListener("click", close);
+  $("#filter-close").addEventListener("click", close);
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") close(); });
+}
+
+function activeFilterCount() {
+  let n = FILTERS.types.size + FILTERS.regions.size;
+  for (const k of ["priceMin", "priceMax", "areaMin", "areaMax", "ppmMin", "ppmMax"]) {
+    if (FILTERS[k] != null) n++;
+  }
+  if (FILTERS.onlyNew) n++;
+  return n;
+}
+
+function updateFilterCountBadge() {
+  const n = activeFilterCount();
+  const badge = $("#active-filter-count");
+  if (n > 0) { badge.hidden = false; badge.textContent = n; }
+  else { badge.hidden = true; }
 }
 
 // ----- Bootstrap -----

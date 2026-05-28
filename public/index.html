@@ -2,7 +2,9 @@
 <html lang="bg">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#181c25" media="(prefers-color-scheme: dark)">
 <title>Имоти Ловеч — Продажби</title>
 <meta name="description" content="Всички обяви за продажби в град Ловеч от imot.bg, обновявани на всеки 30 минути.">
 <link rel="stylesheet" href="style.css">
@@ -18,16 +20,33 @@
     </div>
     <div class="actions">
       <button id="toggle-only-new" class="btn-ghost">Само нови</button>
-      <button id="mark-all-seen" class="btn-ghost">Маркирай всички като прочетени</button>
+      <button id="mark-all-seen" class="btn-ghost">Прочети всички</button>
     </div>
   </div>
 </header>
+
+<div class="filter-bar">
+  <button id="filter-toggle" class="btn-filter-toggle" aria-expanded="false" aria-controls="filters">
+    <span class="ico">⚲</span> Филтри <span id="active-filter-count" class="fcount" hidden>0</span>
+  </button>
+  <select id="sort-mobile" class="sort-mobile" aria-label="Сортирай">
+    <option value="new">Най-нови</option>
+    <option value="price_asc">Цена ↑</option>
+    <option value="price_desc">Цена ↓</option>
+    <option value="area_desc">Най-голяма площ</option>
+    <option value="ppm_asc">€/m² ↑</option>
+    <option value="ppm_desc">€/m² ↓</option>
+  </select>
+</div>
 
 <main class="layout">
   <aside class="filters" id="filters">
     <div class="filters-header">
       <strong>Филтри</strong>
-      <button id="clear-filters" class="btn-link">Изчисти</button>
+      <div class="filters-header-actions">
+        <button id="clear-filters" class="btn-link">Изчисти</button>
+        <button id="filter-close" class="btn-link filter-close" aria-label="Затвори филтрите">✕</button>
+      </div>
     </div>
 
     <fieldset>
@@ -67,7 +86,7 @@
       </div>
     </fieldset>
 
-    <fieldset>
+    <fieldset class="sort-fieldset">
       <legend>Сортирай по</legend>
       <select id="sort">
         <option value="new">Най-нови</option>
@@ -85,6 +104,8 @@
     <div id="empty" class="empty" hidden>Няма обяви с тези филтри.</div>
   </section>
 </main>
+
+<div id="filter-backdrop" class="filter-backdrop" hidden></div>
 
 <footer class="footer">
   <small>Данни от <a href="https://www.imot.bg/obiavi/prodazhbi/grad-lovech" target="_blank" rel="noopener">imot.bg</a> · обновявани на всеки 30 мин · 1 EUR = 1.95583 лв</small>
