@@ -614,6 +614,30 @@ def build_top_stats(merged_active, report):
     }
 
 
+def content_signature(listings):
+    """Нормализиран отпечатък на обявите БЕЗ нестабилните полета.
+
+    Игнорира `last_seen` (мени се всеки run) и сортира по ID + ключове,
+    за да е независим от реда на сваляне. Така две идентични по същество
+    свалки дават еднакъв отпечатък → не презаписваме файла напразно.
+    """
+    norm = []
+    for r in sorted(listings, key=lambda x: x.get("id") or ""):
+        norm.append({k: r[k] for k in sorted(r) if k != "last_seen"})
+    return json.dumps(norm, ensure_ascii=False, sort_keys=True)
+
+
+def read_existing_signature(json_path):
+    if not json_path.exists():
+        return None
+    try:
+        with open(json_path, encoding="utf-8") as f:
+            old = json.load(f)
+        return content_signature(old.get("listings", []))
+    except (json.JSONDecodeError, OSError):
+        return None
+
+
 def write_json(merged, report, json_path, now_iso):
     json_path.parent.mkdir(parents=True, exist_ok=True)
     active = [r for r in merged if r.get("still_active")]
@@ -623,7 +647,7 @@ def write_json(merged, report, json_path, now_iso):
         "source": LISTING_URL,
         "eur_to_bgn": EUR_TO_BGN,
         "stats": build_top_stats(active, report),
-        "listings": merged,
+        "listings": merged,  # вече сортирани по ID
     }
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=1)
@@ -693,10 +717,19 @@ def main():
             pass
 
     merged, new_count, stale_kept = merge_with_existing(ok_with_id, json_path, now_iso)
-    write_json(merged, report, json_path, now_iso)
-    print(f"\n  JSON: {json_path}")
-    print(f"  Активни: {len([r for r in merged if r.get('still_active')])}, "
-          f"новопоявили се: {new_count}, неактивни (запазени): {stale_kept}")
+    merged.sort(key=lambda r: r.get("id") or "")  # стабилен ред за чисти diff-ове
+
+    # Записваме само ако има реална промяна в обявите (спестява Cloudflare build-ове)
+    old_sig = read_existing_signature(json_path)
+    new_sig = content_signature(merged)
+    if old_sig is not None and new_sig == old_sig:
+        print(f"\n  Няма промяна в обявите — data.json НЕ е презаписан (спестен build).")
+        print(f"  Активни: {len([r for r in merged if r.get('still_active')])}")
+    else:
+        write_json(merged, report, json_path, now_iso)
+        print(f"\n  JSON презаписан: {json_path}")
+        print(f"  Активни: {len([r for r in merged if r.get('still_active')])}, "
+              f"новопоявили се: {new_count}, неактивни (запазени): {stale_kept}")
 
     # Резюме в конзолата
     print("\n" + "=" * 60)
