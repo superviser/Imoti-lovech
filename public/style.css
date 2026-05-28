@@ -252,6 +252,7 @@ a:hover { text-decoration: underline; }
     padding-right: max(16px, env(safe-area-inset-right));
     overflow-y: auto;
     overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
   }
   .filters.open { transform: translateX(0); visibility: visible; }
   .filter-close { display: inline-block; }

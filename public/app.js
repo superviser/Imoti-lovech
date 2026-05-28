@@ -318,24 +318,12 @@ function setupDrawer() {
   const backdrop = $("#filter-backdrop");
   const toggle = $("#filter-toggle");
 
-  // body overflow:hidden не заключва скрола на iOS/мобилни (скролът е на
-  // <html>). Затова фиксираме body на текущата позиция и я връщаме при затваряне.
-  let savedScrollY = 0;
-  const lockScroll = () => {
-    savedScrollY = window.scrollY;
-    document.body.style.position = "fixed";
-    document.body.style.top = `-${savedScrollY}px`;
-    document.body.style.left = "0";
-    document.body.style.right = "0";
-    document.body.style.width = "100%";
-  };
-  const unlockScroll = () => {
-    document.body.style.position = "";
-    document.body.style.top = "";
-    document.body.style.left = "";
-    document.body.style.right = "";
-    document.body.style.width = "";
-    window.scrollTo(0, savedScrollY);
+  // Блокира скрола на фона, но оставя скрола ВЪТРЕ в панела свободен.
+  // (body overflow:hidden не работи на iOS, а body position:fixed чупи
+  //  вътрешния скрол на fixed панела — затова отказваме touchmove само
+  //  когато жестът е извън #filters.)
+  const blockBgScroll = (e) => {
+    if (!filters.contains(e.target)) e.preventDefault();
   };
 
   const open = () => {
@@ -343,14 +331,14 @@ function setupDrawer() {
     backdrop.hidden = false;
     requestAnimationFrame(() => backdrop.classList.add("show"));
     toggle.setAttribute("aria-expanded", "true");
-    lockScroll();
+    document.addEventListener("touchmove", blockBgScroll, { passive: false });
   };
   const close = () => {
     filters.classList.remove("open");
     backdrop.classList.remove("show");
     setTimeout(() => { backdrop.hidden = true; }, 220);
     toggle.setAttribute("aria-expanded", "false");
-    unlockScroll();
+    document.removeEventListener("touchmove", blockBgScroll, { passive: false });
   };
 
   toggle.addEventListener("click", () => {
