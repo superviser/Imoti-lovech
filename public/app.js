@@ -183,6 +183,7 @@ function render() {
   for (const r of filtered) grid.appendChild(renderCard(r));
   $("#empty").hidden = filtered.length > 0;
   $("#count-pill").textContent = `${filtered.length} обяви`;
+  updateAvgPill(filtered);
   updateNewPill();
   updateFilterCountBadge();
   updateFacetCounts();
@@ -197,6 +198,25 @@ function updateNewPill() {
   } else {
     pill.hidden = true;
   }
+}
+
+// Mean €/m² на филтрираните обяви — игнорира тези без price_per_m2_eur
+function computeMeanPpm(listings) {
+  const vals = [];
+  for (const r of listings) {
+    if (r.price_per_m2_eur != null) vals.push(r.price_per_m2_eur);
+  }
+  if (vals.length === 0) return null;
+  const mean = vals.reduce((a, b) => a + b, 0) / vals.length;
+  return { mean: Math.round(mean), n: vals.length };
+}
+
+function updateAvgPill(listings) {
+  const pill = $("#avg-pill");
+  const stat = computeMeanPpm(listings);
+  if (!stat) { pill.hidden = true; return; }
+  pill.hidden = false;
+  pill.textContent = `≈ ${fmtPrice(stat.mean)} €/m² · от ${stat.n}`;
 }
 
 // ----- Filter UI -----
