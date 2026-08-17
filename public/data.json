@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-08-16T22:19:00Z",
+ "generated_at": "2026-08-17T09:39:09Z",
  "city": "Ловеч",
  "source": "https://www.imot.bg/obiavi/prodazhbi/grad-lovech",
  "eur_to_bgn": 1.95583,
  "stats": {
-  "total": 282,
-  "with_price_and_area": 257,
+  "total": 283,
+  "with_price_and_area": 258,
   "apartments": {
    "n": 74,
    "mean": 1122.81,
@@ -49,7 +49,7 @@
    "construction": "Панел",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -69,7 +69,7 @@
    "construction": "Панел",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -89,7 +89,7 @@
    "construction": "Панел",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -109,7 +109,7 @@
    "construction": "Панел",
    "error": null,
    "first_seen": "2026-05-28T10:40:27Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -129,7 +129,7 @@
    "construction": "Панел",
    "error": null,
    "first_seen": "2026-07-20T12:15:24Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -149,7 +149,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-07-18T06:04:17Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -169,7 +169,7 @@
    "construction": "Панел",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -189,7 +189,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -209,7 +209,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -229,7 +229,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -249,7 +249,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -269,7 +269,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -289,7 +289,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -309,7 +309,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -329,7 +329,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -349,7 +349,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -369,7 +369,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -389,7 +389,7 @@
    "construction": "Панел",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -409,7 +409,7 @@
    "construction": "Панел",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -429,7 +429,7 @@
    "construction": "Панел",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -449,7 +449,7 @@
    "construction": "Панел",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -469,7 +469,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-06-02T15:41:35Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -509,7 +509,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-06-18T16:30:32Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -529,7 +529,7 @@
    "construction": "Панел",
    "error": null,
    "first_seen": "2026-06-30T13:25:12Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -549,7 +549,7 @@
    "construction": "Панел",
    "error": null,
    "first_seen": "2026-07-05T09:41:41Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -589,7 +589,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-07-20T12:15:24Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -609,7 +609,7 @@
    "construction": "Панел",
    "error": null,
    "first_seen": "2026-07-27T15:23:41Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -629,7 +629,7 @@
    "construction": "Панел",
    "error": null,
    "first_seen": "2026-07-27T15:23:41Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -649,7 +649,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-08-06T06:11:19Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -689,7 +689,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-08-12T10:02:04Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -709,7 +709,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -729,7 +729,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -749,7 +749,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -769,7 +769,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -789,7 +789,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -809,7 +809,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -829,7 +829,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -849,7 +849,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-07-21T19:59:57Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -869,7 +869,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-06-02T11:17:21Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -889,7 +889,7 @@
    "construction": "Панел",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -909,7 +909,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -929,7 +929,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -949,7 +949,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -969,7 +969,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -989,7 +989,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1009,7 +1009,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1029,7 +1029,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1049,7 +1049,7 @@
    "construction": "Панел",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1069,7 +1069,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1089,7 +1089,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1109,7 +1109,7 @@
    "construction": "Панел",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1129,7 +1129,7 @@
    "construction": "Панел",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1149,7 +1149,7 @@
    "construction": "Панел",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1169,7 +1169,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1189,7 +1189,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1209,7 +1209,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1229,7 +1229,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1269,7 +1269,7 @@
    "construction": "Панел",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1289,7 +1289,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-29T14:10:55Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1309,7 +1309,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-06-03T15:15:53Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1329,7 +1329,7 @@
    "construction": "Панел",
    "error": null,
    "first_seen": "2026-06-20T12:27:49Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1349,7 +1349,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-06-19T16:11:08Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1369,7 +1369,7 @@
    "construction": "Панел",
    "error": null,
    "first_seen": "2026-07-20T09:41:25Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1389,7 +1389,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-07-21T12:52:17Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1409,7 +1409,7 @@
    "construction": "Панел",
    "error": null,
    "first_seen": "2026-07-25T20:09:55Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1429,7 +1429,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-07-27T15:23:41Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1449,7 +1449,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-08-09T12:50:43Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1469,7 +1469,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-08-11T09:58:57Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1509,7 +1509,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-08-13T16:01:19Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1529,7 +1529,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-08-01T11:15:35Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1549,7 +1549,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1569,7 +1569,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1589,7 +1589,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1609,7 +1609,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1629,7 +1629,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1669,7 +1669,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1689,7 +1689,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1709,7 +1709,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1729,7 +1729,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1749,7 +1749,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1769,7 +1769,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-06-25T08:22:21Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1789,7 +1789,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-06-25T08:22:21Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1809,7 +1809,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1829,7 +1829,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1849,7 +1849,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1869,7 +1869,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1889,7 +1889,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-07-01T18:25:02Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1909,7 +1909,7 @@
    "construction": "Гредоред",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1929,7 +1929,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1949,7 +1949,7 @@
    "construction": "Гредоред",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1969,7 +1969,7 @@
    "construction": "Гредоред",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -1989,7 +1989,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2009,7 +2009,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2029,7 +2029,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2049,7 +2049,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2069,7 +2069,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2089,7 +2089,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2109,7 +2109,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2129,7 +2129,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-07-29T15:13:30Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2149,7 +2149,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2169,7 +2169,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2189,7 +2189,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2209,7 +2209,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-06-26T13:10:37Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2229,7 +2229,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-07-17T11:05:51Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2249,7 +2249,7 @@
    "construction": "Гредоред",
    "error": null,
    "first_seen": "2026-07-21T11:22:48Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2269,7 +2269,7 @@
    "construction": "Гредоред",
    "error": null,
    "first_seen": "2026-07-22T07:09:24Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2289,7 +2289,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-07-30T18:55:17Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2309,7 +2309,7 @@
    "construction": "Гредоред",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2329,7 +2329,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2349,7 +2349,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2369,7 +2369,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2389,7 +2389,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2409,7 +2409,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2429,7 +2429,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2449,7 +2449,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2469,7 +2469,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-06-08T20:13:29Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2489,7 +2489,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2509,7 +2509,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2529,7 +2529,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2549,7 +2549,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2569,7 +2569,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2589,7 +2589,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2609,7 +2609,7 @@
    "construction": "Гредоред",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2629,7 +2629,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2669,7 +2669,7 @@
    "construction": "Гредоред",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2689,7 +2689,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2709,7 +2709,7 @@
    "construction": "Гредоред",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2729,7 +2729,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2749,7 +2749,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2769,7 +2769,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-06-09T13:44:32Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2789,7 +2789,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2809,7 +2809,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-07-31T15:18:16Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2829,7 +2829,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2849,7 +2849,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2869,7 +2869,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-07-31T15:18:16Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2889,7 +2889,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2909,7 +2909,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-06-02T11:17:21Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2929,7 +2929,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-06-02T22:22:43Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2949,7 +2949,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-08-04T18:11:14Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2969,7 +2969,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-06-24T15:18:15Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -2989,7 +2989,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-06-30T11:29:37Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3009,7 +3009,7 @@
    "construction": "Гредоред",
    "error": null,
    "first_seen": "2026-07-02T11:53:05Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3029,7 +3029,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-07-20T12:15:24Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3049,7 +3049,7 @@
    "construction": "Гредоред",
    "error": null,
    "first_seen": "2026-07-27T12:21:36Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3069,7 +3069,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-08-10T15:58:37Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3089,7 +3089,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-08-11T08:53:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3109,7 +3109,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-08-11T11:44:26Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3129,7 +3129,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3149,7 +3149,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3169,7 +3169,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3189,7 +3189,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-06-28T14:22:55Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3209,7 +3209,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3229,7 +3229,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3249,7 +3249,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3269,7 +3269,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3289,7 +3289,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3309,7 +3309,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3329,7 +3329,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3349,7 +3349,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-07-21T06:27:30Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3369,7 +3369,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-06-04T09:11:25Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3389,7 +3389,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3413,6 +3413,26 @@
    "still_active": false
   },
   {
+   "id": "1l178695941884218",
+   "url": "https://www.imot.bg/obiava-1l178695941884218-prodava-magazin-grad-lovech-shirok-tsentar-tsacho-shishkov-35",
+   "title": "Продава МАГАЗИН в град Ловеч, Широк център - 21 кв.м / 32 000 € :: imot.bg Обява 884218",
+   "type": "Магазин",
+   "region": "Shirok Tsentar Tsacho Shishkov 35",
+   "area_m2": 21.0,
+   "price_eur": 32000.0,
+   "price_bgn": 62586.56,
+   "price_per_m2_eur": 1523.81,
+   "floor": null,
+   "total_floors": null,
+   "year_from": 2013,
+   "year_to": 2026,
+   "construction": "Тухла",
+   "error": null,
+   "first_seen": "2026-08-17T09:39:09Z",
+   "last_seen": "2026-08-17T09:39:09Z",
+   "still_active": true
+  },
+  {
    "id": "1m150305417295565",
    "url": "https://www.imot.bg/obiava-1m150305417295565-prodava-zavedenie-grad-lovech-zdravets",
    "title": "Продава ЗАВЕДЕНИЕ в град Ловеч, Здравец - 90 кв.м / 26 000 €, АСАВИЯ :: imot.bg Обява 295565",
@@ -3429,7 +3449,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3449,7 +3469,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3469,7 +3489,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3489,7 +3509,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3509,7 +3529,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3529,7 +3549,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3549,7 +3569,7 @@
    "construction": "ПК",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3569,7 +3589,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3589,7 +3609,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-07-27T05:09:52Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3609,7 +3629,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-07-13T15:41:10Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3629,7 +3649,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-07-18T17:57:38Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3649,7 +3669,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-08-02T13:17:22Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3709,7 +3729,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-08-14T07:22:04Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3729,7 +3749,7 @@
    "construction": "Панел",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3749,7 +3769,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3769,7 +3789,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3789,7 +3809,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3809,7 +3829,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3829,7 +3849,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3849,7 +3869,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3869,7 +3889,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3889,7 +3909,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3909,7 +3929,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3929,7 +3949,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3949,7 +3969,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3969,7 +3989,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -3989,7 +4009,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4009,7 +4029,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4029,7 +4049,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4049,7 +4069,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-07-27T12:21:36Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4069,7 +4089,7 @@
    "construction": "Панел",
    "error": null,
    "first_seen": "2026-08-10T11:45:30Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4089,7 +4109,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4109,7 +4129,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4129,7 +4149,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4149,7 +4169,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-06-16T23:04:01Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4169,7 +4189,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4189,7 +4209,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4209,7 +4229,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4229,7 +4249,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4249,7 +4269,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4269,7 +4289,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4289,7 +4309,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4309,7 +4329,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4329,7 +4349,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4349,7 +4369,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4369,7 +4389,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4389,7 +4409,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4409,7 +4429,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4429,7 +4449,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4449,7 +4469,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4469,7 +4489,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4489,7 +4509,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4509,7 +4529,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4529,7 +4549,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4549,7 +4569,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4569,7 +4589,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4589,7 +4609,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4609,7 +4629,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4629,7 +4649,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4669,7 +4689,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4689,7 +4709,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4709,7 +4729,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4729,7 +4749,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-07-24T16:45:23Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4749,7 +4769,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4769,7 +4789,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4789,7 +4809,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4809,7 +4829,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4829,7 +4849,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4849,7 +4869,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4869,7 +4889,7 @@
    "construction": "Панел",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4889,7 +4909,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4909,7 +4929,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4929,7 +4949,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4949,7 +4969,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4969,7 +4989,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -4989,7 +5009,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5009,7 +5029,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5029,7 +5049,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-06-01T23:01:38Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5049,7 +5069,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5069,7 +5089,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5089,7 +5109,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5109,7 +5129,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5129,7 +5149,7 @@
    "construction": "ПК",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5149,7 +5169,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-07-11T06:34:51Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5169,7 +5189,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5189,7 +5209,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5209,7 +5229,7 @@
    "construction": "Масивна",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5229,7 +5249,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5249,7 +5269,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5269,7 +5289,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-07-11T06:34:51Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5289,7 +5309,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5309,7 +5329,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5329,7 +5349,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5349,7 +5369,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5369,7 +5389,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5389,7 +5409,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5409,7 +5429,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5429,7 +5449,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5449,7 +5469,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5469,7 +5489,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5489,7 +5509,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5509,7 +5529,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5529,7 +5549,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5549,7 +5569,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5569,7 +5589,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5589,7 +5609,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5609,7 +5629,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5629,7 +5649,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5649,7 +5669,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-06-04T12:27:37Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5669,7 +5689,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-06-15T17:30:34Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5689,7 +5709,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-07-01T16:05:17Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5709,7 +5729,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-07-13T09:53:35Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5729,7 +5749,7 @@
    "construction": "Масивна",
    "error": null,
    "first_seen": "2026-08-03T10:41:41Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5749,7 +5769,7 @@
    "construction": null,
    "error": null,
    "first_seen": "2026-08-05T12:22:59Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5769,7 +5789,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5789,7 +5809,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5809,7 +5829,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5829,7 +5849,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5849,7 +5869,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5869,7 +5889,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   },
   {
@@ -5889,7 +5909,7 @@
    "construction": "Тухла",
    "error": null,
    "first_seen": "2026-05-27T20:22:33Z",
-   "last_seen": "2026-08-16T22:19:00Z",
+   "last_seen": "2026-08-17T09:39:09Z",
    "still_active": true
   }
  ]
